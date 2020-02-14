@@ -1,0 +1,22 @@
+<% if(page.comments && theme.disqus.enabled){ %>
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript><%= __('comments.no_js') %></noscript>
+        </div>
+    </div>
+<% } %>
+<% if(theme.valine.enable) { %>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <div id="vcomments" class="blog-post-comments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            visitor: true,
+            appId: '<%=theme.valine.app_id %>',
+            appKey: '<%=theme.valine.app_key %>',
+            placeholder: '客观，您怎么看 ? ',
+            avatar: 'robohash'
+        })
+    </script>
+<% } %>

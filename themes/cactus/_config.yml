@@ -1,0 +1,142 @@
+##############################################################################
+# 主题配置文件
+##############################################################################
+
+# 新用于显示备案信息的选项
+# 格式 icp: 京ICP备12345678号
+# icp: 湘ICP备17005082号
+
+# 请不要修改这里,除非你希望支持阿拉伯语或波斯文. (使用 rtl 来支持这些阿拉伯国家的字体.)
+direction: ltr
+# 配置你的导航菜单.
+# 按照 'Key: url' 来配置
+# 如果你希望使用中文来替换 Key 请到 languages/*.yml 中指定 Key 对应的翻译
+nav:
+  home: /
+  articles: /archives/
+  分类: /categories
+  标签: /tags
+  搜索: /search/
+  关于: /about/
+
+
+# 在首页显示的，用于连接到你社交媒体的链接.
+# 你可以手动指定被 Fontawesome icon 支持的图标
+# (查看 https://fontawesome.com/icons?d=gallery&s=brands);
+# 注意:仅仅 'gitee' 和 'mail' 是被主题强制定义的图标.
+social_links:
+  mail: mailto:pigbreeder@foxmail.com
+
+# 是否在首页显示标签云,标签云将会在文章列表的上面显示.
+# 详细: https://hexo.io/docs/helpers.html#tagcloud
+tags_overview: false
+
+# 在首页显示文章列表的相关配置.
+# 选项:
+#   - show_all_posts: 在首页显示所有文章.
+#   - post_count: 每页显示指定数量的文章.
+#   - sort_updated: 按上次修改日期而不是创建日期对文章排序.
+posts_overview:
+  show_all_posts: true
+  post_count: 20
+  sort_updated: false
+
+# 文章归档展示.
+# 选项:
+#   - sort_updated: 按上次修改日期而不是创建日期对文章排序.
+# 注意: 该选项不能与分页一起工作，因为分页插件按创建日期对页面进行排序.
+archive:
+  sort_updated: false
+
+# 自定义文章显示.
+# 选项:
+#   - show_updated: 在文章页面显示最后修改文章日期.
+post:
+  show_updated: true
+
+##############################################################################
+# 感官配置项
+##############################################################################
+
+# 网站头部的logo配置.
+# 选项:
+#   - enabled: 显示或者隐藏logo.
+#   - width: 显示logo的宽度(px作为单位)
+#   - height: 显示logo的高度(px作为单位)
+#   - url: logo文件的位置
+#   - gravatar: 是否使用你的 Gravatar 作为logo
+logo:
+  enabled: true
+  width: 50
+  height: 50
+  url: /images/Photo_0411_1a.jpg
+  gravatar: false
+
+# 自定义 favicons.
+# Cactus supports a limited set of the three most important icons:
+#   - desktop: The classic favion.ico file.
+#   - android: A 192x192 PNG file.
+#   - apple:  A 180x180 PNG file.
+# These can be generated with http://realfavicongenerator.net/
+# Options:
+#   - url: where the icon can be found
+#   - gravatar: whether to create a favicon from your Gravatar
+favicon:
+  desktop:
+    url: /images/favicon.ico
+    gravatar: false
+  android:
+    url: /images/favicon-192x192.png
+    gravatar: false
+  apple:
+    url: /images/apple-touch-icon.png
+    gravatar: false
+
+# 使用 highlight 来高亮代码块.
+# 默认xuthus配色,xuthus配色基于github-gist样式修改,自定义请查看 source/css/_highlight 支持的配色.
+highlight: xuthus
+
+# 设置主题配色.
+# 支持 'dark', 'light', 'classic' 和 'white'.
+# 自定义在 source/css/_colors 下进行,建议使用white.
+colorscheme: white
+
+# 页面布局最大宽度,不建议修改(rem作为单位).
+page_width: 48
+
+
+##############################################################################
+# 杂项
+##############################################################################
+
+# 是否开启 RSS 订阅.
+rss: false
+
+
+# 请设置你的 Gravatar 用户 id 或者 email 如果你使用 gravatar 作为 logo 或者 favicons 在你的网站上.
+gravatar:
+  email: pigbreeder@foxmail.com
+
+##############################################################################
+# Plugins
+##############################################################################
+
+# Fill in your Disqus Comments Shortname to enable Disqus comments.
+disqus:
+  enabled: false
+  shortname: cactus-1
+
+# Fill in your Google Analytics tracking ID to enable Google Analytics.
+google_analytics:
+  enabled: false
+  id: UA-86660611-1
+
+# Fill in your Baidu Analytics tracking ID to enable Baidu Analytics.
+baidu_analytics:
+  enabled: false
+  id: 2e6da3c375c8a87f5b664cea6d4cb29c
+  
+valine:
+  enable: true
+  app_id: IjjUpp2S5CNd0BqFE3MajmBT-gzGzoHsz
+  app_key: xinPQvMeYMXCkU4AJ9opMsoJ
