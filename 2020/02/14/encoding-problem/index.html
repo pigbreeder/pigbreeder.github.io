@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>一文解决编码问题</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+      
+<link rel="stylesheet" href="/css/rtl.css">
+
+    
+    <!-- rss -->
+    
+    
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'vdm6kqd',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<meta name="generator" content="Hexo 4.1.1"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/categories">分类</a></li>
+         
+          <li><a href="/tags">标签</a></li>
+         
+          <li><a href="/search/">搜索</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2020/04/22/2020-think-live-life/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2020/02/09/wh-2020/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://pigbreeder.github.io/2020/02/14/encoding-problem/" target="_blank" rel="noopener"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&text=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&title=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&is_video=false&description=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=一文解决编码问题&body=Check out this article: https://pigbreeder.github.io/2020/02/14/encoding-problem/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&title=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&title=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&title=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&title=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&name=一文解决编码问题&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、字符编码简单介绍"><span class="toc-number">1.</span> <span class="toc-text">一、字符编码简单介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-ASCII码"><span class="toc-number">1.1.</span> <span class="toc-text">1. ASCII码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-GB2312"><span class="toc-number">1.2.</span> <span class="toc-text">2. GB2312</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-GBK和GB18030"><span class="toc-number">1.3.</span> <span class="toc-text">3. GBK和GB18030</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Unicode"><span class="toc-number">1.4.</span> <span class="toc-text">4. Unicode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-UTF-8"><span class="toc-number">1.5.</span> <span class="toc-text">3. UTF-8</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用操作"><span class="toc-number">2.</span> <span class="toc-text">常用操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python-中的编码"><span class="toc-number">3.</span> <span class="toc-text">Python 中的编码</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#代码文件中的字符"><span class="toc-number">3.0.1.</span> <span class="toc-text">代码文件中的字符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#I-O字符"><span class="toc-number">3.0.2.</span> <span class="toc-text">I&#x2F;O字符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常见问题"><span class="toc-number">3.0.3.</span> <span class="toc-text">常见问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C-中的编码"><span class="toc-number">4.</span> <span class="toc-text">C++ 中的编码</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        一文解决编码问题
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">猪的饲养员</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2020-02-14T15:30:34.000Z" itemprop="datePublished">2020-02-14</time>
+        
+        (Updated: <time datetime="2020-04-22T13:15:29.894Z" itemprop="dateModified">2020-04-22</time>)
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/python/" rel="tag">python</a>, <a class="tag-link" href="/tags/%E7%BC%96%E7%A0%81/" rel="tag">编码</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="一、字符编码简单介绍"><a href="#一、字符编码简单介绍" class="headerlink" title="一、字符编码简单介绍"></a>一、字符编码简单介绍</h2><p>在计算机内部，全部的信息终于都表示为一个二进制的字符串。每个二进制位（bit）有0和1两种状态，因此八个二进制位就能够组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共能够用来表示256种不同的状态，每个状态相应一个符号，就是256个符号，从0000000到11111111。一个字节能表示的最大的整数就是255（二进制11111111=十进制255），如果要表示更大的整数，就必须用更多的字节。比如两个字节可以表示的最大整数是<code>65535</code>，4个字节可以表示的最大整数是<code>4294967295</code>。</p>
+<h3 id="1-ASCII码"><a href="#1-ASCII码" class="headerlink" title="1. ASCII码"></a>1. ASCII码</h3><p>上个世纪60年代，美国制定了一套字符编码，对英语字符与二进制位之间的关系，做了统一规定。这被称为ASCII码，一直沿用至今。<br>ASCII码一共规定了128个字符的编码，比方空格“SPACE”是32（二进制00100000），大写的字母A是65（二进制01000001）。这128个符号（包含32个不能打印出来的控制符号），仅仅占用了一个字节的后面7位，最前面的1位统一规定为0。</p>
+<h3 id="2-GB2312"><a href="#2-GB2312" class="headerlink" title="2. GB2312"></a>2. GB2312</h3><p>计算机进入中国后，无法显示中文，一个自己已经被占满了，我国重新制定了一个编码表，将扩展的第八位对应的拉丁文全部删掉，规定一个小于127的字符与原来的意义相同，当两个大于127的字符链接在一起的时候，就表示一个汉字，前面一个字节为高字节（0xA1-0xF7），后面一个字节为低字节(0xA1-0xFE)，这样可以表示7000多个汉字，这种编码叫做GB2312。GB2312是对ASCII的中文扩展</p>
+<h3 id="3-GBK和GB18030"><a href="#3-GBK和GB18030" class="headerlink" title="3. GBK和GB18030"></a>3. GBK和GB18030</h3><p>由于汉字的数量太大，GB2312不能满足需求，后来规定只要第一个字节大于127就固定表示一个汉字，不管后面的是不是扩展字符集里面的内容，扩展后的编码成为GBK, GBK包括了GB2312的所有内容，同时增加了近20000个新的汉字（包括繁体）和符号</p>
+<h3 id="4-Unicode"><a href="#4-Unicode" class="headerlink" title="4. Unicode"></a>4. Unicode</h3><p>至于亚洲国家的文字，使用的符号就很多其它了，汉字就多达10万左右。一个字节仅仅能表示256种符号，肯定是不够的，就必须使用多个字节表达一个符号。比方，中文简体常见的编码方式是GB2312，使用两个字节表示一个汉字，所以理论上最多能够表示256x256=65536个符号。</p>
+<p>世界上存在着多种编码方式，同一个二进制数字能够被解释成不同的符号。因此，要想打开一个文本文件，就必须知道它的编码方式，否则用错误的编码方式解读，就会出现乱码。为什么电子邮件经常出现乱码？就是由于发信人和收信人使用的编码方式不一样。<br>能够想象，假设有一种编码，将世界上全部的符号都纳入当中。每个符号都给予一个独一无二的编码，那么乱码问题就会消失。这就是Unicode，就像它的名字都表示的，这是一种全部符号的编码。</p>
+<p>Unicode当然是一个非常大的集合，如今的规模能够容纳100多万个符号。每一个符号的编码都不一样。须要注意的是，<strong>Unicode仅仅是一个符号集，它仅仅规定了符号的二进制代码，却没有规定这个二进制代码应该怎样存储。</strong></p>
+<h3 id="3-UTF-8"><a href="#3-UTF-8" class="headerlink" title="3. UTF-8"></a>3. UTF-8</h3><p>互联网的普及，强烈要求出现一种统一的编码方式。UTF-8就是在互联网上使用最广的一种unicode的实现方式。其它实现方式还包含UTF-16和UTF-32，只是在互联网上基本不用。反复一遍，这里的关系是，UTF-8是Unicode的实现方式之中的一个。<br>UTF-8最大的一个特点，就是它是一种变长的编码方式。它能够使用1~6个字节表示一个符号，依据不同的符号而变化字节长度。<br>UTF-8的编码规则非常easy，仅仅有二条：<br>1）对于单字节的符号，字节的第一位设为0，后面7位为这个符号的unicode码。因此对于英语字母，UTF-8编码和ASCII码是同样的。<br>2）对于n字节的符号（n&gt;1），第一个字节的前n位都设为1，第n+1位设为0，后面字节的前两位一律设为10。剩下的没有提及的二进制位，所有为这个符号的unicode码。<br>如表：<br>1字节 0xxxxxxx<br>2字节 110xxxxx 10xxxxxx<br>3字节 1110xxxx 10xxxxxx 10xxxxxx<br>4字节 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx<br>5字节 111110xx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx<br>6字节 1111110x 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx<br>因此UTF-8中能够用来表示字符编码的实际位数最多有31位，即上表中x所表示的位。除去那些控制位（每字节开头的10等），这些x表示的位与UNICODE编码是一一相应的，位高低顺序也同样。<br>实际将UNICODE转换为UTF-8编码时应先去除高位0，然后依据所剩编码的位数决定所需最小的UTF-8编码位数。<br>因此那些基本ASCII字符集中的字符（UNICODE兼容ASCII）仅仅须要一个字节的UTF-8编码（7个二进制位）便能够表示。 </p>
+<h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><p><a href="https://linux.cn/article-7959-1.html" target="_blank" rel="noopener"%3Ehttps://linux.cn/article-7959-1.html">参考</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">iconv -f utf-8 -t gb2312 aaa.txt &gt;bbb.txt   <span class="comment"># 转换</span></span><br><span class="line">:<span class="built_in">set</span> fileencoding=utf-8 <span class="comment"># vim 转换</span></span><br><span class="line">file your_file.txt <span class="comment"># 查看编码类型</span></span><br><span class="line">:<span class="built_in">set</span> fileencoding <span class="comment"># vim 查看编码类型</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Python-中的编码"><a href="#Python-中的编码" class="headerlink" title="Python 中的编码"></a>Python 中的编码</h2><p><a href="https://blog.csdn.net/danlei94/article/details/77116984" target="_blank" rel="noopener">参考</a> <a href="https://www.jb51.net/article/159713.htm" target="_blank" rel="noopener">参考</a></p>
+<p>如果使用python3基本避免了编码问题，所以新手别用py2了，浪费太多时间在上面。<br>从四个场景和常见问题进行介绍，同时强烈建议如果不是特殊需求，文件保存的方式都是utf8</p>
+<h4 id="代码文件中的字符"><a href="#代码文件中的字符" class="headerlink" title="代码文件中的字符"></a>代码文件中的字符</h4><p>代码文件中的字符就是 <code>main.py</code> 这种py文件中的字符，下面有py2 和py3 的示例。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#encoding=utf8</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="comment"># 上面两种都行选一个就好，一定要写，这个是告诉py解释器文件保存方式。</span></span><br><span class="line"><span class="comment"># 同时保证文件的存储一定是按照utf8存储。Windows可以用sublime/notepad++存储为UTF8 without BOM这种方式，Linux天然UTF8</span></span><br><span class="line"></span><br><span class="line">s1= <span class="string">'中文str'</span></span><br><span class="line">s2=<span class="string">u'中文str'</span></span><br><span class="line">print(s1.__class__, s2.__class__, s1, s2)</span><br><span class="line"></span><br><span class="line"><span class="comment">#py2 output</span></span><br><span class="line">(&lt;type <span class="string">'str'</span>&gt;, &lt;type <span class="string">'unicode'</span>&gt;)</span><br><span class="line">中文str</span><br><span class="line">中文str</span><br><span class="line"><span class="comment">#py3 output</span></span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> '<span class="title">str</span>'&gt; &lt;<span class="title">class</span> '<span class="title">str</span>'&gt; </span></span><br><span class="line"><span class="class">中文<span class="title">str</span> </span></span><br><span class="line"><span class="class">中文<span class="title">str</span></span></span><br></pre></td></tr></table></figure>
+<p>由此可见py3中已经把str和Unicode统一起来了，但是在py2中还进行了区分</p>
+<h4 id="I-O字符"><a href="#I-O字符" class="headerlink" title="I/O字符"></a>I/O字符</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#py2</span></span><br><span class="line"><span class="comment"># Python2 里面编码是 unicode -&gt; str，相反的，解码就是 str -&gt; unicode。</span></span><br><span class="line"><span class="comment"># 若str对象调用encode会默认先按系统默认编码方式 decode成unicode对象再encode，忽视了中间默认的decode往往导致报错。 </span></span><br><span class="line"><span class="comment"># 我们没有指明解码方式，python 就会使用 sys.defaultencoding 指明的方式来解码。很多情况下 sys.defaultencoding为ANSCII，如果 str 不是这个类型就会出错。</span></span><br><span class="line"><span class="comment"># 输出时候设置setdefaultencoding来解决py2打印不正确的问题</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#encoding=utf8</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">"utf-8"</span>)</span><br><span class="line"><span class="keyword">print</span> sys.getdefaultencoding()</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> codecs</span><br><span class="line">file = <span class="string">'a.in'</span> <span class="comment"># content: 中文字符str进行测试</span></span><br><span class="line">f = codecs.open(file,<span class="string">"r"</span>,<span class="string">"utf-8"</span>) <span class="comment"># 利用codecs直接转成unicode进行处理</span></span><br><span class="line">fwGbk = open(file + <span class="string">'.gbk'</span>, <span class="string">'w'</span>) </span><br><span class="line">fwUtf8 = open(file + <span class="string">'.utf8'</span>, <span class="string">'w'</span>) </span><br><span class="line">fwDefault = open(file + <span class="string">'.default'</span>, <span class="string">'w'</span>) <span class="comment">#文件的读写操作默认使用系统编码，可以通过调用 sys.getdefaultencoding() 来得到</span></span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> f:</span><br><span class="line">    print(type(line), line)</span><br><span class="line">    fwUtf8.write(line.encode(<span class="string">"utf-8"</span>))</span><br><span class="line">    fwGbk.write(line.encode(<span class="string">"gb2312"</span>))</span><br><span class="line">    fwDefault.write(line))</span><br><span class="line"></span><br><span class="line"><span class="comment"># ==============================================================</span></span><br><span class="line"><span class="comment">#py3</span></span><br><span class="line">f = open(file, <span class="string">'r'</span>, encoding=<span class="string">'utf8'</span>) <span class="comment"># 如果是gbk 有时候范围不够用 open(‘1.txt’,encoding=’gb18030’，errors=‘ignore’)；</span></span><br><span class="line">fwGbk = open(file + <span class="string">'.gbk'</span>, <span class="string">'w'</span>, encoding=<span class="string">'gbk'</span>)</span><br><span class="line">fwUtf8 = open(file + <span class="string">'.utf8'</span>, <span class="string">'w'</span>, encoding=<span class="string">'utf8'</span>)</span><br><span class="line">fwDefault = open(file + <span class="string">'.default'</span>, <span class="string">'w'</span>)</span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> f:</span><br><span class="line">    fwGbk.write(gbk)</span><br><span class="line">    fwUtf8.write(utf8)</span><br><span class="line">    fwDefault.write(line)</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h4><ol>
+<li><p>unicodeencodeerror: ‘ascii’ codec can’t encode characters<br>因为python2默认是ASCII编码str，所以对于读取信息str为utf8的就死掉了。</p>
+</li>
+<li><p>UnicodeEncodeError: ‘ascii’ codec can’t encode characters in position 0-3: ordinal not in range(128)<br>在进行同时包含 str 与 unicode 的运算时，Python 一律都把 str 转换成 unicode 再运算，当然，运算结果也都是 unicode。由于 Python 事先并不知道 str 的编码，它只能使用 sys.getdefaultencoding() 编码去 decode。在我的印象里，sys.getdefaultencoding() 的值总是 ‘ascii’ ，如果需要转换的 str 有中文，一定会出现错误。</p>
+</li>
+<li><p>打印出的结果还是有问题。如果是用终端查看的，确保xshell/Xterm等程序编码设置正确</p>
+<h2 id="C-中的编码"><a href="#C-中的编码" class="headerlink" title="C++ 中的编码"></a>C++ 中的编码</h2><p><a href="https://blog.csdn.net/netyeaxi/article/details/81036482" target="_blank" rel="noopener">参考</a>  <a href="https://blog.csdn.net/calmreason/article/details/7935258" target="_blank" rel="noopener">参考</a><br>C++ 用着更难受，因为偏底层的原因，各种转换申请/释放空间都繁琐，最不爱用了。</p>
+</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// C++标准库中对应关系：</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">char</span> *        <span class="built_in">std</span>::<span class="built_in">string</span></span><br><span class="line"><span class="keyword">wchar_t</span>*   <span class="built_in">std</span>::<span class="built_in">wstring</span></span><br><span class="line"><span class="keyword">char16_t</span>*  <span class="built_in">std</span>::u16string</span><br><span class="line"><span class="keyword">char32_t</span>*  <span class="built_in">std</span>::u32string</span><br><span class="line"><span class="comment">// C++标准库从C++11开始提供了std::codecvt_utf8和std::codecvt_byname两个转换器来完成编码转换，可使用的通用代码如下</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;locale&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;codecvt&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="comment">// string的编码方式为utf8，则采用：</span></span><br><span class="line"><span class="built_in">std</span>::<span class="function"><span class="built_in">string</span> <span class="title">wstring2utf8string</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">wstring</span>&amp; str)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="built_in">std</span>::wstring_convert&lt;<span class="built_in">std</span>::codecvt_utf8&lt;<span class="keyword">wchar_t</span>&gt; &gt; strCnv;</span><br><span class="line">    <span class="keyword">return</span> strCnv.to_bytes(str);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="built_in">std</span>::<span class="function"><span class="built_in">wstring</span> <span class="title">utf8string2wstring</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span>&amp; str)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="built_in">std</span>::wstring_convert&lt; <span class="built_in">std</span>::codecvt_utf8&lt;<span class="keyword">wchar_t</span>&gt; &gt; strCnv;</span><br><span class="line">    <span class="keyword">return</span> strCnv.from_bytes(str);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">// string的编码方式为除utf8外的其它编码方式，可采用：</span></span><br><span class="line"><span class="built_in">std</span>::<span class="function"><span class="built_in">string</span> <span class="title">wstring2string</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">wstring</span>&amp; str, <span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span>&amp; locale)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">typedef</span> <span class="built_in">std</span>::codecvt_byname&lt;<span class="keyword">wchar_t</span>, <span class="keyword">char</span>, <span class="built_in">std</span>::<span class="keyword">mbstate_t</span>&gt; F;</span><br><span class="line">    <span class="keyword">static</span> <span class="built_in">std</span>::wstring_convert&lt;F&gt; strCnv(<span class="keyword">new</span> F(locale));</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> strCnv.to_bytes(str);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="built_in">std</span>::<span class="function"><span class="built_in">wstring</span> <span class="title">string2wstring</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span>&amp; str, <span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span>&amp; locale)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">typedef</span> <span class="built_in">std</span>::codecvt_byname&lt;<span class="keyword">wchar_t</span>, <span class="keyword">char</span>, <span class="built_in">std</span>::<span class="keyword">mbstate_t</span>&gt; F;</span><br><span class="line">    <span class="keyword">static</span> <span class="built_in">std</span>::wstring_convert&lt;F&gt; strCnv(<span class="keyword">new</span> F(locale));</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> strCnv.from_bytes(str);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">如果是GBK <span class="built_in">string</span>与<span class="built_in">wstring</span>互相转化，locale可取值：</span><br><span class="line">linux下：</span><br><span class="line">zh_CN.GBK</span><br><span class="line">zh_CN.GB2312</span><br><span class="line">zh_CN.GB18030</span><br><span class="line"></span><br><span class="line">windows下：</span><br><span class="line">标准格式的locale：</span><br><span class="line">Chinese_China<span class="number">.936</span></span><br><span class="line">zh-CN</span><br><span class="line"><span class="number">.936</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <div id="vcomments" class="blog-post-comments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            visitor: true,
+            appId: 'IjjUpp2S5CNd0BqFE3MajmBT-gzGzoHsz',
+            appKey: 'xinPQvMeYMXCkU4AJ9opMsoJ',
+            placeholder: '客观，您怎么看 ? ',
+            avatar: 'robohash'
+        })
+    </script>
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/categories">分类</a></li>
+         
+          <li><a href="/tags">标签</a></li>
+         
+          <li><a href="/search/">搜索</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、字符编码简单介绍"><span class="toc-number">1.</span> <span class="toc-text">一、字符编码简单介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-ASCII码"><span class="toc-number">1.1.</span> <span class="toc-text">1. ASCII码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-GB2312"><span class="toc-number">1.2.</span> <span class="toc-text">2. GB2312</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-GBK和GB18030"><span class="toc-number">1.3.</span> <span class="toc-text">3. GBK和GB18030</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Unicode"><span class="toc-number">1.4.</span> <span class="toc-text">4. Unicode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-UTF-8"><span class="toc-number">1.5.</span> <span class="toc-text">3. UTF-8</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用操作"><span class="toc-number">2.</span> <span class="toc-text">常用操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python-中的编码"><span class="toc-number">3.</span> <span class="toc-text">Python 中的编码</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#代码文件中的字符"><span class="toc-number">3.0.1.</span> <span class="toc-text">代码文件中的字符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#I-O字符"><span class="toc-number">3.0.2.</span> <span class="toc-text">I&#x2F;O字符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常见问题"><span class="toc-number">3.0.3.</span> <span class="toc-text">常见问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C-中的编码"><span class="toc-number">4.</span> <span class="toc-text">C++ 中的编码</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://pigbreeder.github.io/2020/02/14/encoding-problem/" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&text=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&title=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&is_video=false&description=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=一文解决编码问题&body=Check out this article: https://pigbreeder.github.io/2020/02/14/encoding-problem/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&title=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&title=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&title=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&title=一文解决编码问题" target="_blank" rel="noopener"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://pigbreeder.github.io/2020/02/14/encoding-problem/&name=一文解决编码问题&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 猪的饲养员 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/categories">分类</a></li>
+         
+          <li><a href="/tags">标签</a></li>
+         
+          <li><a href="/search/">搜索</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+
+    <!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+
+<!-- clipboard -->
+
+  
+<script src="/lib/clipboard/clipboard.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight .code pre").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      target: function(trigger) {
+        return trigger.nextElementSibling;
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+</body>
+</html>

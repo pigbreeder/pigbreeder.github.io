@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>关于生活是什么？关于我们要什么？关于我们如何生活一生？</title>
+    <url>/2020/04/22/2020-think-live-life/</url>
+    <content><![CDATA[<p>关于生活是什么？关于我们要什么？关于我们如何生活一生？</p>
+<p>在写关于问题回答之前，我想简单回顾一下毛骗这部剧。<br>花了一周看了3季的毛骗，3分钟前刚看完最后一集。非常非常感动，不只为剧中情节的用心动人，也为剧组演员们的坚守与成长。<br>第一季的风格完全就是杀马特，是09年拍摄的，因为垃圾的画质和杀马特风格一度弃剧两次，最近坚持2集之后才完全接受并一口气看完。非常真实的反映了那个时代的特色，可能我是个比较怀旧但近一两年又极力避免怀旧的人，一下把我拉回到10年前还真不适应，赶火车大包小包贪便宜，卖手机转头丢你模型机。转念一想，以为没几年前的日子其实已经十年了。<br>剧中人物各具特色，主角小宝的成长性，技术宅黎伟，偷神冬冬，美女安宁，神秘邵庄，人物很有特色，并没有脸谱化让你感觉就是身边的人，剧情很用心，作为含推理部分的剧集，显然许多地方牵强附会事后诸葛，虽然许多地方很假，但是假的不让你讨厌，而会让你理解。</p>
+<center class="half">
+    <img src="p830185131.jpeg" width="3000"/>
+    <img src="p2496249356.jpeg" width="3000"/>
+</center>
+
+<p>冬冬应该是剧中颜值lowest吧，但是暗地里的身份却最高，舵主儿子，车祸失忆，和兄弟糊里糊涂的纠葛相杀，一心攒钱为了供楼收房租。真是大部分底层真实写照。</p>
+<p>三季五年的时间，用每集的小故事串起来了一个大格局，编剧真的很用心了，刚开始的小成本能走到最后真是不容易，从心底里为他们的付出点赞。</p>
+<p>抛开剧来说，剧中演员从青葱大学生参演，一起通力合作多年，最后完成精品良作这其中的成长对于他们应该都是终生难忘的回忆与财富。恰巧又读到了一句话”Once you’ve accumulated sufficient knowledge to get by, you’re too old to remember it.” </p>
+<p>由此我联想到了自己，有多久没有为一件自己愿意付出的事情付出最大的努力了？<br>有多久没有生活的目的和方向，而是按部就班脚踩西瓜皮？说好听点是顺势而为，说不好听点就是one day ,one dollar.</p>
+<p>没有味道的生活，在很多人看来应该是生活本来的样子，应该是赚钱，升职，买房这些。但人只活一次，我的价值观是如果你没有梦想去做，没有付出没有改变，那其实很多时候在25岁时候就已经死了，只不过到75岁才埋进土里。</p>
+<p>那么为什么不去选择到你愿意完全付出的事物，去收获快乐和成长的乐趣？</p>
+<p>更多的人没有目标，没有想法。</p>
+<p>为什么有这种情况？封闭自己，没有体验。早早的就把自己的能力圈划定了，超过这个范围的东西都当作异类本能的排斥，和自己原有价值观冲突的地方就是对自己的冲突，对自己熟悉事物的批评就是对自己的批判，口头上高喊拥抱变化，尝试新鲜，实际上是亦步亦趋，作茧自缚，浅尝辄止。这个问题每个人都有，随着年龄增长越明显而已。</p>
+<p>没有值得你为之疯狂的事情，在我看来，真的算白活<del>~</del></p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>社会</tag>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一文解决编码问题</title>
+    <url>/2020/02/14/encoding-problem/</url>
+    <content><![CDATA[<h2 id="一、字符编码简单介绍"><a href="#一、字符编码简单介绍" class="headerlink" title="一、字符编码简单介绍"></a>一、字符编码简单介绍</h2><p>在计算机内部，全部的信息终于都表示为一个二进制的字符串。每个二进制位（bit）有0和1两种状态，因此八个二进制位就能够组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共能够用来表示256种不同的状态，每个状态相应一个符号，就是256个符号，从0000000到11111111。一个字节能表示的最大的整数就是255（二进制11111111=十进制255），如果要表示更大的整数，就必须用更多的字节。比如两个字节可以表示的最大整数是<code>65535</code>，4个字节可以表示的最大整数是<code>4294967295</code>。</p>
+<h3 id="1-ASCII码"><a href="#1-ASCII码" class="headerlink" title="1. ASCII码"></a>1. ASCII码</h3><p>上个世纪60年代，美国制定了一套字符编码，对英语字符与二进制位之间的关系，做了统一规定。这被称为ASCII码，一直沿用至今。<br>ASCII码一共规定了128个字符的编码，比方空格“SPACE”是32（二进制00100000），大写的字母A是65（二进制01000001）。这128个符号（包含32个不能打印出来的控制符号），仅仅占用了一个字节的后面7位，最前面的1位统一规定为0。</p>
+<h3 id="2-GB2312"><a href="#2-GB2312" class="headerlink" title="2. GB2312"></a>2. GB2312</h3><p>计算机进入中国后，无法显示中文，一个自己已经被占满了，我国重新制定了一个编码表，将扩展的第八位对应的拉丁文全部删掉，规定一个小于127的字符与原来的意义相同，当两个大于127的字符链接在一起的时候，就表示一个汉字，前面一个字节为高字节（0xA1-0xF7），后面一个字节为低字节(0xA1-0xFE)，这样可以表示7000多个汉字，这种编码叫做GB2312。GB2312是对ASCII的中文扩展</p>
+<h3 id="3-GBK和GB18030"><a href="#3-GBK和GB18030" class="headerlink" title="3. GBK和GB18030"></a>3. GBK和GB18030</h3><p>由于汉字的数量太大，GB2312不能满足需求，后来规定只要第一个字节大于127就固定表示一个汉字，不管后面的是不是扩展字符集里面的内容，扩展后的编码成为GBK, GBK包括了GB2312的所有内容，同时增加了近20000个新的汉字（包括繁体）和符号</p>
+<h3 id="4-Unicode"><a href="#4-Unicode" class="headerlink" title="4. Unicode"></a>4. Unicode</h3><p>至于亚洲国家的文字，使用的符号就很多其它了，汉字就多达10万左右。一个字节仅仅能表示256种符号，肯定是不够的，就必须使用多个字节表达一个符号。比方，中文简体常见的编码方式是GB2312，使用两个字节表示一个汉字，所以理论上最多能够表示256x256=65536个符号。</p>
+<p>世界上存在着多种编码方式，同一个二进制数字能够被解释成不同的符号。因此，要想打开一个文本文件，就必须知道它的编码方式，否则用错误的编码方式解读，就会出现乱码。为什么电子邮件经常出现乱码？就是由于发信人和收信人使用的编码方式不一样。<br>能够想象，假设有一种编码，将世界上全部的符号都纳入当中。每个符号都给予一个独一无二的编码，那么乱码问题就会消失。这就是Unicode，就像它的名字都表示的，这是一种全部符号的编码。</p>
+<p>Unicode当然是一个非常大的集合，如今的规模能够容纳100多万个符号。每一个符号的编码都不一样。须要注意的是，<strong>Unicode仅仅是一个符号集，它仅仅规定了符号的二进制代码，却没有规定这个二进制代码应该怎样存储。</strong></p>
+<h3 id="3-UTF-8"><a href="#3-UTF-8" class="headerlink" title="3. UTF-8"></a>3. UTF-8</h3><p>互联网的普及，强烈要求出现一种统一的编码方式。UTF-8就是在互联网上使用最广的一种unicode的实现方式。其它实现方式还包含UTF-16和UTF-32，只是在互联网上基本不用。反复一遍，这里的关系是，UTF-8是Unicode的实现方式之中的一个。<br>UTF-8最大的一个特点，就是它是一种变长的编码方式。它能够使用1~6个字节表示一个符号，依据不同的符号而变化字节长度。<br>UTF-8的编码规则非常easy，仅仅有二条：<br>1）对于单字节的符号，字节的第一位设为0，后面7位为这个符号的unicode码。因此对于英语字母，UTF-8编码和ASCII码是同样的。<br>2）对于n字节的符号（n&gt;1），第一个字节的前n位都设为1，第n+1位设为0，后面字节的前两位一律设为10。剩下的没有提及的二进制位，所有为这个符号的unicode码。<br>如表：<br>1字节 0xxxxxxx<br>2字节 110xxxxx 10xxxxxx<br>3字节 1110xxxx 10xxxxxx 10xxxxxx<br>4字节 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx<br>5字节 111110xx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx<br>6字节 1111110x 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx<br>因此UTF-8中能够用来表示字符编码的实际位数最多有31位，即上表中x所表示的位。除去那些控制位（每字节开头的10等），这些x表示的位与UNICODE编码是一一相应的，位高低顺序也同样。<br>实际将UNICODE转换为UTF-8编码时应先去除高位0，然后依据所剩编码的位数决定所需最小的UTF-8编码位数。<br>因此那些基本ASCII字符集中的字符（UNICODE兼容ASCII）仅仅须要一个字节的UTF-8编码（7个二进制位）便能够表示。 </p>
+<h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><p><a href="https://linux.cn/article-7959-1.html" target="_blank" rel="noopener"%3Ehttps://linux.cn/article-7959-1.html">参考</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">iconv -f utf-8 -t gb2312 aaa.txt &gt;bbb.txt   <span class="comment"># 转换</span></span><br><span class="line">:<span class="built_in">set</span> fileencoding=utf-8 <span class="comment"># vim 转换</span></span><br><span class="line">file your_file.txt <span class="comment"># 查看编码类型</span></span><br><span class="line">:<span class="built_in">set</span> fileencoding <span class="comment"># vim 查看编码类型</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Python-中的编码"><a href="#Python-中的编码" class="headerlink" title="Python 中的编码"></a>Python 中的编码</h2><p><a href="https://blog.csdn.net/danlei94/article/details/77116984" target="_blank" rel="noopener">参考</a> <a href="https://www.jb51.net/article/159713.htm" target="_blank" rel="noopener">参考</a></p>
+<p>如果使用python3基本避免了编码问题，所以新手别用py2了，浪费太多时间在上面。<br>从四个场景和常见问题进行介绍，同时强烈建议如果不是特殊需求，文件保存的方式都是utf8</p>
+<h4 id="代码文件中的字符"><a href="#代码文件中的字符" class="headerlink" title="代码文件中的字符"></a>代码文件中的字符</h4><p>代码文件中的字符就是 <code>main.py</code> 这种py文件中的字符，下面有py2 和py3 的示例。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#encoding=utf8</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="comment"># 上面两种都行选一个就好，一定要写，这个是告诉py解释器文件保存方式。</span></span><br><span class="line"><span class="comment"># 同时保证文件的存储一定是按照utf8存储。Windows可以用sublime/notepad++存储为UTF8 without BOM这种方式，Linux天然UTF8</span></span><br><span class="line"></span><br><span class="line">s1= <span class="string">'中文str'</span></span><br><span class="line">s2=<span class="string">u'中文str'</span></span><br><span class="line">print(s1.__class__, s2.__class__, s1, s2)</span><br><span class="line"></span><br><span class="line"><span class="comment">#py2 output</span></span><br><span class="line">(&lt;type <span class="string">'str'</span>&gt;, &lt;type <span class="string">'unicode'</span>&gt;)</span><br><span class="line">中文str</span><br><span class="line">中文str</span><br><span class="line"><span class="comment">#py3 output</span></span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> '<span class="title">str</span>'&gt; &lt;<span class="title">class</span> '<span class="title">str</span>'&gt; </span></span><br><span class="line"><span class="class">中文<span class="title">str</span> </span></span><br><span class="line"><span class="class">中文<span class="title">str</span></span></span><br></pre></td></tr></table></figure>
+<p>由此可见py3中已经把str和Unicode统一起来了，但是在py2中还进行了区分</p>
+<h4 id="I-O字符"><a href="#I-O字符" class="headerlink" title="I/O字符"></a>I/O字符</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#py2</span></span><br><span class="line"><span class="comment"># Python2 里面编码是 unicode -&gt; str，相反的，解码就是 str -&gt; unicode。</span></span><br><span class="line"><span class="comment"># 若str对象调用encode会默认先按系统默认编码方式 decode成unicode对象再encode，忽视了中间默认的decode往往导致报错。 </span></span><br><span class="line"><span class="comment"># 我们没有指明解码方式，python 就会使用 sys.defaultencoding 指明的方式来解码。很多情况下 sys.defaultencoding为ANSCII，如果 str 不是这个类型就会出错。</span></span><br><span class="line"><span class="comment"># 输出时候设置setdefaultencoding来解决py2打印不正确的问题</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#encoding=utf8</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">"utf-8"</span>)</span><br><span class="line"><span class="keyword">print</span> sys.getdefaultencoding()</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> codecs</span><br><span class="line">file = <span class="string">'a.in'</span> <span class="comment"># content: 中文字符str进行测试</span></span><br><span class="line">f = codecs.open(file,<span class="string">"r"</span>,<span class="string">"utf-8"</span>) <span class="comment"># 利用codecs直接转成unicode进行处理</span></span><br><span class="line">fwGbk = open(file + <span class="string">'.gbk'</span>, <span class="string">'w'</span>) </span><br><span class="line">fwUtf8 = open(file + <span class="string">'.utf8'</span>, <span class="string">'w'</span>) </span><br><span class="line">fwDefault = open(file + <span class="string">'.default'</span>, <span class="string">'w'</span>) <span class="comment">#文件的读写操作默认使用系统编码，可以通过调用 sys.getdefaultencoding() 来得到</span></span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> f:</span><br><span class="line">    print(type(line), line)</span><br><span class="line">    fwUtf8.write(line.encode(<span class="string">"utf-8"</span>))</span><br><span class="line">    fwGbk.write(line.encode(<span class="string">"gb2312"</span>))</span><br><span class="line">    fwDefault.write(line))</span><br><span class="line"></span><br><span class="line"><span class="comment"># ==============================================================</span></span><br><span class="line"><span class="comment">#py3</span></span><br><span class="line">f = open(file, <span class="string">'r'</span>, encoding=<span class="string">'utf8'</span>) <span class="comment"># 如果是gbk 有时候范围不够用 open(‘1.txt’,encoding=’gb18030’，errors=‘ignore’)；</span></span><br><span class="line">fwGbk = open(file + <span class="string">'.gbk'</span>, <span class="string">'w'</span>, encoding=<span class="string">'gbk'</span>)</span><br><span class="line">fwUtf8 = open(file + <span class="string">'.utf8'</span>, <span class="string">'w'</span>, encoding=<span class="string">'utf8'</span>)</span><br><span class="line">fwDefault = open(file + <span class="string">'.default'</span>, <span class="string">'w'</span>)</span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> f:</span><br><span class="line">    fwGbk.write(gbk)</span><br><span class="line">    fwUtf8.write(utf8)</span><br><span class="line">    fwDefault.write(line)</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h4><ol>
+<li><p>unicodeencodeerror: ‘ascii’ codec can’t encode characters<br>因为python2默认是ASCII编码str，所以对于读取信息str为utf8的就死掉了。</p>
+</li>
+<li><p>UnicodeEncodeError: ‘ascii’ codec can’t encode characters in position 0-3: ordinal not in range(128)<br>在进行同时包含 str 与 unicode 的运算时，Python 一律都把 str 转换成 unicode 再运算，当然，运算结果也都是 unicode。由于 Python 事先并不知道 str 的编码，它只能使用 sys.getdefaultencoding() 编码去 decode。在我的印象里，sys.getdefaultencoding() 的值总是 ‘ascii’ ，如果需要转换的 str 有中文，一定会出现错误。</p>
+</li>
+<li><p>打印出的结果还是有问题。如果是用终端查看的，确保xshell/Xterm等程序编码设置正确</p>
+<h2 id="C-中的编码"><a href="#C-中的编码" class="headerlink" title="C++ 中的编码"></a>C++ 中的编码</h2><p><a href="https://blog.csdn.net/netyeaxi/article/details/81036482" target="_blank" rel="noopener">参考</a>  <a href="https://blog.csdn.net/calmreason/article/details/7935258" target="_blank" rel="noopener">参考</a><br>C++ 用着更难受，因为偏底层的原因，各种转换申请/释放空间都繁琐，最不爱用了。</p>
+</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// C++标准库中对应关系：</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">char</span> *        <span class="built_in">std</span>::<span class="built_in">string</span></span><br><span class="line"><span class="keyword">wchar_t</span>*   <span class="built_in">std</span>::<span class="built_in">wstring</span></span><br><span class="line"><span class="keyword">char16_t</span>*  <span class="built_in">std</span>::u16string</span><br><span class="line"><span class="keyword">char32_t</span>*  <span class="built_in">std</span>::u32string</span><br><span class="line"><span class="comment">// C++标准库从C++11开始提供了std::codecvt_utf8和std::codecvt_byname两个转换器来完成编码转换，可使用的通用代码如下</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;locale&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;codecvt&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="comment">// string的编码方式为utf8，则采用：</span></span><br><span class="line"><span class="built_in">std</span>::<span class="function"><span class="built_in">string</span> <span class="title">wstring2utf8string</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">wstring</span>&amp; str)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="built_in">std</span>::wstring_convert&lt;<span class="built_in">std</span>::codecvt_utf8&lt;<span class="keyword">wchar_t</span>&gt; &gt; strCnv;</span><br><span class="line">    <span class="keyword">return</span> strCnv.to_bytes(str);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="built_in">std</span>::<span class="function"><span class="built_in">wstring</span> <span class="title">utf8string2wstring</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span>&amp; str)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="built_in">std</span>::wstring_convert&lt; <span class="built_in">std</span>::codecvt_utf8&lt;<span class="keyword">wchar_t</span>&gt; &gt; strCnv;</span><br><span class="line">    <span class="keyword">return</span> strCnv.from_bytes(str);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">// string的编码方式为除utf8外的其它编码方式，可采用：</span></span><br><span class="line"><span class="built_in">std</span>::<span class="function"><span class="built_in">string</span> <span class="title">wstring2string</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">wstring</span>&amp; str, <span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span>&amp; locale)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">typedef</span> <span class="built_in">std</span>::codecvt_byname&lt;<span class="keyword">wchar_t</span>, <span class="keyword">char</span>, <span class="built_in">std</span>::<span class="keyword">mbstate_t</span>&gt; F;</span><br><span class="line">    <span class="keyword">static</span> <span class="built_in">std</span>::wstring_convert&lt;F&gt; strCnv(<span class="keyword">new</span> F(locale));</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> strCnv.to_bytes(str);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="built_in">std</span>::<span class="function"><span class="built_in">wstring</span> <span class="title">string2wstring</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span>&amp; str, <span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span>&amp; locale)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">typedef</span> <span class="built_in">std</span>::codecvt_byname&lt;<span class="keyword">wchar_t</span>, <span class="keyword">char</span>, <span class="built_in">std</span>::<span class="keyword">mbstate_t</span>&gt; F;</span><br><span class="line">    <span class="keyword">static</span> <span class="built_in">std</span>::wstring_convert&lt;F&gt; strCnv(<span class="keyword">new</span> F(locale));</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> strCnv.from_bytes(str);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">如果是GBK <span class="built_in">string</span>与<span class="built_in">wstring</span>互相转化，locale可取值：</span><br><span class="line">linux下：</span><br><span class="line">zh_CN.GBK</span><br><span class="line">zh_CN.GB2312</span><br><span class="line">zh_CN.GB18030</span><br><span class="line"></span><br><span class="line">windows下：</span><br><span class="line">标准格式的locale：</span><br><span class="line">Chinese_China<span class="number">.936</span></span><br><span class="line">zh-CN</span><br><span class="line"><span class="number">.936</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>编码</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录我看到的武汉疫情</title>
+    <url>/2020/02/09/wh-2020/</url>
+    <content><![CDATA[<p>若干年后，曾经历过这场灾难的人们，我会用怎样的方式来讲述这个恐慌的春节？对于那些没有经历过的人们。<br>最好的记录方式也许是按照时间线梳理短短半个月翻天覆地的变化。不过在这之前我想先回想一下我的“SARS”经历。</p>
+<h2 id="SARS"><a href="#SARS" class="headerlink" title="SARS"></a>SARS</h2><p>2003年的“SARS”我10岁，现在保留的印象并不深刻，记忆中模糊的是几个片段：在家跟着教育台一起学习；出入大门时需要绿底黑字带小夹子的出入证才行；挥之不去的消毒水味；中间去了趟小学，数学马老师骑着踏板摩托过来给大家布置作业，拿上就回去，不记得是否带了口罩；我妈说的跳绳/羽毛球运动/电视上是否每天播报感染人数，我都记不得了，偶尔瞥向大门外的街道也是稀稀落落的车。其他什么都记不得了。回忆下“SARS”，让我回忆到了那时童真的想法，社会的停摆，紧张的气氛。</p>
+<h2 id="疫情的大背景"><a href="#疫情的大背景" class="headerlink" title="疫情的大背景"></a>疫情的大背景</h2><p>2019年是个什么样的大背景呢？</p>
+<ul>
+<li>外在是中美关系正是破裂，贸易战如火如荼，即便是每次谈判的风声也会在A股引来一场风波，而美股坚如磐石，不断高攀，18年喊的小打小赢大打大赢的声音也渐渐没有了，都逐渐认清了中美双方实力对比。中国由于产业链外移压力大，猪肉导致的CPI高涨，经济下行压力大，主动寻求签第一阶段协议(购买美国农产品，保护知识产权等)</li>
+<li>香港方面，“反送中”运动持续了半年的时间，香港人的诉求被一拖再拖，200W人上街游行，黑警干扰执法，香港人街头运动此起彼伏，立法院本地民主派大获全胜，大陆不断抹黑孤立打压香港民主势力，大陆高持续升温，驻港部队喊话等等，基本宣告香港政策失败，全面对刚大陆。</li>
+<li>台湾方面，因为香港的前车之鉴，一国两制失去阵地，亲大陆完全没有市场，韩国俞被蔡英文翻转，台湾民意基础基本丧失。</li>
+<li>国内由于贸易战出口受阻，地方政府财政危机，房地产和投资断崖下滑，民众本身没钱消费也捉襟见肘，经济下行压力巨大，同时因为执拗的从俄罗斯进口猪肉引发了蔓延全国的猪瘟，猪肉从最便宜时候的7 8 块钱到了30多块钱，引发的通货膨胀明显。小城市越发没有工作机会，百业凋敝，房地产被政府冷冻，新房到手能卖的状态基本要7 8 年(房产证到手3 4年，5年后才能卖)。</li>
+<li>城市方面，二线城市经历过17 18年大涨，19年较为平稳，许多人选择去了杭州南京成都武汉等地。北京从17年大火后清理低端人口，18年拆除违建，19年拆小产权房，北上广深基本都是严控人口。</li>
+<li>社会矛盾比较激化，民航总院杀医案，患者家属直接割喉医生，影响极其恶劣，医患矛盾巨大，医生工作强度高收入低，患者缴费多，交黑心钱等问题很多。</li>
+<li>举行了又一次的阅兵，10月1日的阅兵天气特别差，能见度低，同时安保极其严格，清场范围大，提前半个月限制外地车进京，关闭所有夜间场所，建国门到复兴门附近所有的高楼窗户都贴上了反光膜，都有人监督。场面大，装备多，结束阅兵后晚上还有晚会。</li>
+</ul>
+<p>整体来说内外交困。</p>
+<h2 id="暴风前的平静"><a href="#暴风前的平静" class="headerlink" title="暴风前的平静"></a>暴风前的平静</h2><p>1月初，从各类信息源听到武汉有传染病，但是我并没有很重视，因为每天都有海量的新闻，很难断定哪个影响巨大。大概半个月前北京有几个内蒙人去朝阳医院看鼠疫，引发了不小震动，但是很快就扑灭了。所以这个武汉肺炎的消息并没有很当回事。大概是快过年回家了(1.25过年，1.22晚上走的)，<br>1.17/8左右，各方面对于这个消息不断报道，最让人起疑心的是日本/泰国/香港/新加坡等地都发现了疫情，但是武汉还没有新增的病例，非常反常识，接着又有新闻说这个和sars很像，传染力惊人，这个时候我就比较关注这个事情了，但到这个时候武汉还没有相关疫情信息，各地也没有防护措施，老家也没人戴口罩，觉得比较远。<br>1.20/21感觉风声越来越紧，各地都不断报道有人感染，之前的医疗组组长(王广发，说可防可控)感染，钟南山去武汉当组长，很多地方的口罩都被扫荡，我也开始戴口罩，家里放了一包。22号上火车戴了两层口罩，地铁/火车车厢内部大多数戴口罩。中途转车省会基本没人戴口罩。<br>1.23到家，小地方基本没人带口罩，都是看新闻觉得挺厉害，小地方受不到影响。由于第一年，当天就走了一遍亲戚。戴口罩被说怕死鬼，胆小。</p>
+<h2 id="暴风骤起"><a href="#暴风骤起" class="headerlink" title="暴风骤起"></a>暴风骤起</h2><p>1.24大年三十，形势陡然严峻起来，武汉封城，很多武汉人逃离武汉，建立雷神山医院(类似03年小汤山)，许多医院开始求助物资。家里也确定初一不聚餐，市委也下发了管理文件。看春晚的时候偶尔吐槽一下。部队医院派了人去武汉支援。<br>1.25这时候就在家中做饭吃，没有出门，时刻关注疫情。<br>后续几天不断升温，全国口罩断货，然后各网站都出了各地疫情统计数据，武汉数据都被人怀疑造假，但是被封城管控没人知道真实数字。刚开始每天增加几百个。后来就是每天2000多的增加。基本初五就破了当年非典5000人感染的记录。餐厅分餐吃饭，进出都戴口罩，各小区都测体温，给车轮消毒。上班时间推迟到2.3号(初十)。</p>
+<h2 id="席卷神州"><a href="#席卷神州" class="headerlink" title="席卷神州"></a>席卷神州</h2><p>31号 破万，形势越来越紧张，后面开始就对数字略有麻木。但各地疫情不断告危，医疗物资极度短缺。蔬菜价格上涨。<br>各地医护人员不断增援武汉，截至2.9大约有1.1W医护人员。</p>
+<!-- ![](北京医疗队.jpg)
+![](上海医疗队.jpg)
+![](解放军医疗队.jpg) -->
+<center class="half">
+    <img src="北京医疗队.jpg" width="300"/>
+    <img src="上海医疗队.jpg" width="300"/>
+    <img src="解放军医疗队.jpeg" width="300"/>
+</center>
+
+<center class="half">
+    <img src="24无症状人员.jpg" width="300"/>
+    <img src="24征召离休人员.jpg" width="300"/>
+    <img src="127发布会不信任武汉政府.jpg" width="300"/>
+    <img src="李文亮造谣传谣.jpg" width="300"/>
+</center>
+
+<p>回到北京后也基本窝在家里基本不出门，惊叹于北京地铁几乎无人，北京西站空旷的害怕，第一次发现北京西站真挺大的。</p>
+<center class="half">
+    <img src="25西站地铁无人.jpg" width="300"/>
+    <img src="25西站地铁无人2.jpg" width="300"/>
+    <img src="25返京动车1.jpg" width="300"/>
+    <img src="25北京大雪.jpg" width="300"/>
+</center>
+
+<p>北京相对老家还是比较松，出入小区简单测下手腕温度.当天下了大雪，美丽的雪景，肆虐的疫情。只能在家做饭吃。</p>
+<center class="half">
+    <img src="在家做饭1.jpg" width="300"/>
+    <img src="在家做饭2.jpg" width="300"/>
+    <img src="菜价.jpg" width="300"/>
+</center>
+
+<p>只能静待好转。</p>
+<h2 id="乱象频出"><a href="#乱象频出" class="headerlink" title="乱象频出"></a>乱象频出</h2><h3 id="遥遥领先的预言"><a href="#遥遥领先的预言" class="headerlink" title="遥遥领先的预言"></a>遥遥领先的预言</h3><!-- ![](造谣传谣.jpg)
+![](造谣传谣2.jpg)
+![](造谣传谣3.jpeg)
+![](李文亮造谣传谣.jpg) -->
+<center class="half">
+    <img src="造谣传谣.jpg" width="300"/>
+    <img src="造谣传谣2.jpg" width="300"/>
+    <img src="造谣传谣3.jpeg" width="300"/>
+    <img src="李文亮造谣传谣.jpg" width="300"/>
+</center>
+
+<h3 id="甩锅蝙蝠"><a href="#甩锅蝙蝠" class="headerlink" title="甩锅蝙蝠"></a>甩锅蝙蝠</h3><div align="center">
+    <img src="美女吃蝙蝠.jpg" height="300px">
+    <img src="美女吃蝙蝠2.jpg"  height="300px">
+</div>
+
+<h3 id="可防可控"><a href="#可防可控" class="headerlink" title="可防可控"></a>可防可控</h3><img src="可防可控.jpg" title="Logo" width="300" /> 
+
+<h3 id="封城封村封小区"><a href="#封城封村封小区" class="headerlink" title="封城封村封小区"></a>封城封村封小区</h3><center class="half">
+    <img src="29用房产不让人口进入.jpg" width="300"/>
+    <img src="武汉封城.jpg" width="300"/>
+    <img src="蔬菜涨价.jpg" width="300"/>
+    <img src="封城1.jpg" width="300"/>
+    <img src="北京封城1.jpg" width="300"/>
+    <img src="北京封城2.jpg" width="300"/>
+</center>
+
+
+<h3 id="红十字截留"><a href="#红十字截留" class="headerlink" title="红十字截留"></a>红十字截留</h3><h3 id="压价收购口罩"><a href="#压价收购口罩" class="headerlink" title="压价收购口罩"></a>压价收购口罩</h3><h3 id="双黄连骗局"><a href="#双黄连骗局" class="headerlink" title="双黄连骗局"></a>双黄连骗局</h3><figure class="half">
+    <img src="20双黄连骗局.jpg" width="300"> <img src="21双黄连骗局.jpg" width="300">
+</figure>
+
+<h3 id="武汉病毒所"><a href="#武汉病毒所" class="headerlink" title="武汉病毒所"></a>武汉病毒所</h3><figure class="half">
+    <img src="武汉病毒所.jpg" width="100%">
+</figure>
+
+<h3 id="2-10"><a href="#2-10" class="headerlink" title="2.10"></a>2.10</h3><p>X露面<br>钟南山说最长潜伏期24天<br>武汉今天才进行小区封闭，而外地基本两周前就开始了。<br>全国对于租户极不友好，很多地方都不让进，滞留两地，睡在救助站；下不了高速，陕煤几百人在休息站滞留。各地不断放大政策，十堰实施战时状态。</p>
+<h3 id="2-13"><a href="#2-13" class="headerlink" title="2.13"></a>2.13</h3><p>湖北和武汉的书记都换掉，还是X的人，然后就把之前存量病患数据放出来，一下就增加了15000人。</p>
+<p>拒绝世界卫生组织和美国调查团来China。</p>
+]]></content>
+      <categories>
+        <category>事件</category>
+      </categories>
+      <tags>
+        <tag>社会</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>医闹成杀医，法律在哪里？</title>
+    <url>/2019/12/29/kill-docter/</url>
+    <content><![CDATA[<blockquote>
+<p>12月24日北京民航总医院女医生被患者家属持刀杀害，抢救无效去世 <a href="https://new.qq.com/omn/20191229/20191229A048Y800.html" target="_blank" rel="noopener">https://new.qq.com/omn/20191229/20191229A048Y800.html</a></p>
+</blockquote>
+<p>这个事情的来龙去脉我就不多说了，随便一搜都有。看完之后更多的是气愤，痛心，想着分分钟把凶手绳之以法枪毙之。在这里，我们把这个事情展开来说说。<br>我觉得看法主要就是回答为什么会有医闹发生？以及连着再说说为什么医疗紧张和医生收入低？</p>
+<h2 id="为什么会有医闹？"><a href="#为什么会有医闹？" class="headerlink" title="为什么会有医闹？"></a>为什么会有医闹？</h2><h3 id="群众基础良好"><a href="#群众基础良好" class="headerlink" title="群众基础良好"></a>群众基础良好</h3><p>俗话说店大欺客，客大欺店，当你作为患者遇到医疗纠纷，一个个人面对庞大的医院，出现问题去投诉，结果是什么？用脚趾头想都知道，和政府部门一样，让你等，互相推诿，想去申诉？结果一样，无限消磨中。这时候有人发现医闹有用，抬棺材，设灵堂，光脚不怕穿鞋各种闹事问题能迅速处理，而且加倍赔偿，只要是正常人都会纷纷效仿，接着各种人瞄上这个生意，职业医闹人从此诞生。</p>
+<h4 id="那么为什么中国的投诉，申诉大部分时间没用？（少数时间有用，比如突然重视市长热线，重视投诉-解决率。12315热线等）"><a href="#那么为什么中国的投诉，申诉大部分时间没用？（少数时间有用，比如突然重视市长热线，重视投诉-解决率。12315热线等）" class="headerlink" title="那么为什么中国的投诉，申诉大部分时间没用？（少数时间有用，比如突然重视市长热线，重视投诉/解决率。12315热线等）"></a>那么为什么中国的投诉，申诉大部分时间没用？（少数时间有用，比如突然重视市长热线，重视投诉/解决率。12315热线等）</h4><h3 id="神话现代医疗，乱宣传"><a href="#神话现代医疗，乱宣传" class="headerlink" title="神话现代医疗，乱宣传"></a>神话现代医疗，乱宣传</h3><p>能治疗的病相对于知道的病，其实是很少的，电视上的乱宣传给人一种印象，医保特别牛逼，农民都看得起病，进一次医院没多少钱。把现代医疗类比于乡村医生，老中医，望闻问切即可搞定，开什么检查，没必要。这给大家一种错误印象，进了医院就安全，如果在医院出了事，就认定是医生不尽责。群众对医疗效果期望过高，费用期望过低。<br>还有2货把医生类比剪发/导购等服务人员，这种人也太垃圾了。。。。</p>
+<h3 id="经济水平和医疗水平不匹配"><a href="#经济水平和医疗水平不匹配" class="headerlink" title="经济水平和医疗水平不匹配"></a>经济水平和医疗水平不匹配</h3><p>就是贵，很多检查，都需要很精密检查才行，不检查直接跟你聊就聊好了？<br>要想承担现代的医疗治疗，费用就是不低，我国的人均GDP才多少就要享受全民比美国还高效的医疗水平，这不现实。但是政府要逆天改命，那么降低药物器材的费用？（都进口，财政补贴？），降低医生工资？（就这点钱，爱干不干，好医院就这么几个一个萝卜一个坑，学了这么多年你其他地方也去不了）你觉得应该采用哪种方式？<br>为了长期维持这个状态，有两个手段。一，强调医德。二，不给钱<br>现在各位还在吹嘘中国医疗制度好，非常高效，看病分分钟就能排上。<strong>这种效率是建立在医生超额付出，严重低估的收入上。不合理的制度会让你认为的短期优秀高效变得越来越沉重，最后整个社会一起去为此陪葬。</strong></p>
+<h3 id="价格体系不合理"><a href="#价格体系不合理" class="headerlink" title="价格体系不合理"></a>价格体系不合理</h3><p>医疗这么贵，那么谁掏钱？哟，治病救人，救死扶伤，你看吃个草抹个药，几个纱布就治病了，哪有这么多钱？<br>赔钱给你治病，人家还活不活了？医生也是人，医院也要经营，医疗投入这么多，医生培养十多年，出来挣的钱和农民工一样，你觉得合理麽？<br>总要有人出钱，你出的那些医保钱不够，政府也没那么多钱补贴啊，很多医院都是自负盈亏，你让医院怎么运转？</p>
+<p>被说烂了的以药养医制度，让医疗产业化，然后医院残留行政编制，但是药品与医疗器械完全商业化，而医疗用品的渠道是官商。这种体制是谁把大头拿走了？这种机制肥了的和贪官有什么区别？领导全拿走，一线别废话！<br>不怎么承认普通医生个人的劳动价值，在病人交纳的费用中作为“诊疗费”直接流向医生的收入太少，医生和医院的收入要靠卖药、开检查来体现。导致整个医疗链条上被药厂、设备厂、领导拿走的部分太多，一线医生们得到的太少。这同时带来了过度开药、过度检查等其他恶化医患关系的问题。，在财政补贴远远无法补偿劳务收入的差价时，要求医生用爱发电印钞是不切实际的。</p>
+<p>同时最重要的，让医院把医生当成了负担，在医院看来，医生本身变成了赔钱货，只有药品和新型医疗设备才是摇钱树。用编制钳制你们的未来，让数十年的学习沉没成本拴住你们的心，高额的强度不断鞭挞一线医生往前，为全民享受医疗资源的政治目标服务。</p>
+<h2 id="那么为什么医闹会有用？"><a href="#那么为什么医闹会有用？" class="headerlink" title="那么为什么医闹会有用？"></a>那么为什么医闹会有用？</h2><p>这里的有用有两个含义，一个是能收到钱，一个是警察不管。<br>如果警察行动迅速，依法办事，我想能收到钱的可能也没那么高，也没几个人敢闹事。</p>
+<h3 id="我们先说为什么能得到医院的迅速妥协。"><a href="#我们先说为什么能得到医院的迅速妥协。" class="headerlink" title="我们先说为什么能得到医院的迅速妥协。"></a>我们先说为什么能得到医院的迅速妥协。</h3><p>在中国当官，最重要的是什么？是不出事，不然你看看各个领导的简历哪个有处理过矿难？医闹？医院归谁管，归卫生部门，那医院领导和卫生部门的领导想不想出事？想不想再进步进步？想不想被一票否决？如果答案是否定，自然倾向息事宁人，转而压榨相应医生，兔死狐悲，其他医生因此更噤若寒蝉。医闹一看，嘿呦，挺有用，你们以前不是看着很厉害麽，怎么我们一闹就怂了成孙子了？</p>
+<h3 id="警察为什么不行动迅速？为什么不依法办事？"><a href="#警察为什么不行动迅速？为什么不依法办事？" class="headerlink" title="警察为什么不行动迅速？为什么不依法办事？"></a>警察为什么不行动迅速？为什么不依法办事？</h3><p>那么请问警察听谁的？听法律麽？受到法律监督问责麽？警察的领导想不想进步？想不想出事？这种算不算维稳？既然都要维稳了，按照维稳处理/领导指示/还是按照法律？大量的资源投入到维稳，正常的工作还能胜任多少？医闹一看，嘿，警察也就和稀泥嘛！！！</p>
+<p>人性的恶在纵容的放大下，无限扩张，原本合理的诉求变成了没有责任的群魔乱舞。</p>
+<h3 id="收入多少应该谁定？"><a href="#收入多少应该谁定？" class="headerlink" title="收入多少应该谁定？"></a>收入多少应该谁定？</h3><p>开放点说，任何职业的价值都是供需决定的。如果一个行业的需求量大，供给量少，自然水涨船高应该挣钱多啊。这样情况下，会刺激更多的人进入这个行业提升供给，价格就会稳定下来。猪肉价格不就这样麽？以猪肉这个完全市场化的产品为例，政府的思路是什么？压住价格，限价限量，大锅饭排队，想吃的买不到，买不起的抢占资源先占住再说，人为制造稀缺，政府做的应该是打击囤货居奇的人。这个思路是不是和房地产/汽车摇号一模一样。</p>
+<h2 id="展开谈一谈"><a href="#展开谈一谈" class="headerlink" title="展开谈一谈"></a>展开谈一谈</h2><p>中国的事情基本上都是D推动，从各种制度，法律都是如此。长期滞后，真正发生了才开始制定。那么下面的执法也就有看谁胳膊粗听谁的（无法可依，都是灰色空间，虽然执法也是混乱）<br>中国特色，外行管内行，各种协会基本都是政府官员调来调去当一把手，不在其中不谋其利，都是官僚思维，根本不考虑身在其中人的利益。</p>
+<p>我们的医疗资源为什么这么短缺？患者费用高，医生收入低，人满为患，医生猝死？</p>
+<p>我认为医疗是和教育，电力，铁路一样被列为控制国计民生的关键资源，ZF要充分掌控，以此来实现“社会主义”的可控性。各种基础行业的效率在这种情况下效率高麽？你觉得油价便宜麽？电价便宜麽？运输费便宜么？（民用是政治，商用谋利，实在不行ZF拨款，ZF没钱幺蛾子）合理的价格，不是让政府管理一家独大，<strong>而是要以法律为底线，充分公平竞争，才能有合理的可持续的价格与品质。</strong></p>
+<p>此外，剩下比较有油水的行业就是国企的外包，用谁不用谁都是领导一句话。</p>
+<p>ZF控制的后果是，效率低下（效率高就没改革开放了），官僚主义横行，以此传递到社会运行成本高昂。任何制度都有问题，都要及时更正纠偏，没有监督机制，真正的一线没有话语权，导致越来越错，真正爆发后，进行一场运动来解决。社会运行起伏颠簸，一脚刹车一脚油门。</p>
+<p>计划生育/教育/医疗/住房/汽车，政府主导的工程。</p>
+]]></content>
+      <categories>
+        <category>社会</category>
+      </categories>
+      <tags>
+        <tag>制度</tag>
+        <tag>体制</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>印度人出任谷歌新CEO，为什么美国印度裔高管远超美国华裔(转)</title>
+    <url>/2019/12/18/Indian-CEO-in-the-world/</url>
+    <content><![CDATA[<p>我说的现象在海外东亚人高学历技术圈更普遍，也许也适用于国内大企业或者外企工作的高学历技术人员。</p>
+<p>=====================================</p>
+<p>最近面试新人，电话谈了两个博士毕业生，一个中国人，一个印度人。</p>
+<p>中国人是国内名校的，也是美国专业排名不错的学校，跟我讲他的博士论文和做的项目，讲得非常细致，具体到用什么公式。其实我更需要他用比较通俗的语言把问题讲清楚，讲得概括一点，有一点高度来说明他对他课题的前瞻性看法。毕竟我们的工作每天面对的是商业部门，人家没心情来听你讲这些细节。</p>
+<p>印度人是一个比较差的学校的博士，一上来极其自信，<strong>先自报家门，把自己的论文，和我们招聘岗位契合的实习经历，不等我问就详细概括地介绍了一遍，侃侃而谈，声音宏亮，英语标准，对我们这个工作岗位已经极为熟悉了</strong>，听起来不需要培训就能干活。说实话，要换了美国人招聘，一定会要这个印度人。但是刚好我对这个印度人做过的这个领域非常熟悉，就问了几个细节，他立刻手忙脚乱，前言不搭后语，我就知道他用了别人现成的东西，自己没有理解。</p>
+<p>后来我就向我们招聘委员会推荐了这个中国人，没有推荐印度人，并如实说了我的感受。管招聘的头是个欧洲来的技术宅，一听说印度人技术细节答不上来立刻拍版中国人进入下一环节招聘。</p>
+<p>但是，不得不承认，如果进来的是这个印度人，他一定比这个中国人升得快。<strong>中国人往往非常擅长完成任务并了解技术细节，会上一发言就是项目细节，但是不擅长概括，更不擅长把自己做的事情和商业目的结合起来描述并从跨部门的角度提出新的建议。所以很容易被别人当成一个工具或者计算机用，一到决策性的东西就靠边站</strong>。</p>
+<p>印度人虽然技术细节差，但对大公司来说，很多技术已经流程化，模块化，标准化，用就行了，不需要搞清楚技术细节，<strong>但向市场部门商业部门把自己项目的重要性和市场关联性解释清楚，却是更重要的</strong>。印度人的概括能力很强并且很快能把技术和商业目的结合起来，他们跨领域的综合能力和理解能力比中国人强。更何况印度的技术牛人也有非常牛的，尤其是IIT的毕业生。</p>
+<p>还有就是印度人的英文书面与口头表达能力甚至超过美国人。我的两任老板都是印度人，都给我改过电子邮件。有时候发给公司高层的邮件，经过他们的修改就有焕然一新的感觉，层次分明，逻辑清楚，文字流畅。我问过我现任老板怎么学的英文，他说他在印度从小看英文报纸长大的，酷爱读报，所以练就了英文阅读和写作能力。现任老板IIT毕业的，语言和书面表达能力都极好，看问题也比较有高度，有时候开会各个部门七嘴八舌我听完了抓不住重点，他三言两语就能给我解释得清清楚楚，这个抓重点的critical thinking的能力非常强。大老板美国人经常要跑过来问他的意见，因为技术问题只有他说的话大老板才能懂。印度人这个理解概括和表达能力不得不服。而让领导和股东明白你做了些什么，为什么重要，这就是大公司里最需要的能力。</p>
+<p>此外还有很重要的一点，<strong>管理风格上印度人比中国人更重视人的发展</strong>。在美国，印度老板爱招印度人，中国老板爱招中国人，<strong>但是印度老板其实很重视发展印度下属的个人能力，给他们创造各种展示机会</strong>。中国老板更重视派的活完成了没有。所以印度人在印度老板下做事情，很快他的提升之路已经规划好了。而中国人在中国老板手下做事情，事情做了一大堆，但是个人能力没有提高，也没有人帮他规划前途。</p>
+<p>我见过印度老板为了给下属攒经验，把一个人做的项目分成三块给三个人做。这个做法见仁见智，我们中国人会觉得这样人浮于事，但事实上这三个人都得到了做重大项目的经验和与高层打交道的机会，因为这个经验以后他们再分插到别的组，三个人都独当一面了。结果这个印度人的下属就成为了多个项目的骨干，一下子关系网就形成了。印度人用这个办法可以把手下的印度下属分插到公司各个平行部门，占据了别的部门的头以后再跳到别的公司做头头，形成关系网以后互相介绍工作和高层职位，一下子多个公司的高层就都出自同门了。</p>
+<p>中国老板往往害怕下属抢了自己的风头，把人都闷在自己的锅里不放，他的位置是没威胁了，但是关系网和资源也建立不起来。为什么中国老板不会培养人？正是因为他们还是读理工科时候的思维惯性，以为抓住几个好项目和熟练掌握一门技术就能独霸吃一辈子。事实上做得越大，商业前瞻性人际关系网和网罗资源的能力越重要，做项目管理或者技术熟练工的替代性太强了，你不干有的是人干。</p>
+<p>将来大家如果有机会在美国做管理，如果要提携自己的同胞，就帮他们提升思维方式，扩展视野，多创造机会。培养一个出色的人，实际上是比按时交活更有成就感的事情。</p>
+]]></content>
+      <categories>
+        <category>社会</category>
+      </categories>
+      <tags>
+        <tag>人际关系</tag>
+        <tag>走得长远</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>subword相关</title>
+    <url>/2019/12/15/subword-relative/</url>
+    <content><![CDATA[<h2 id="什么是subword"><a href="#什么是subword" class="headerlink" title="什么是subword"></a>什么是subword</h2><p>把一个单词再拆分，使得我们的此表会变得精简，解决了out-of-vocab问题。<br>比如<code>中华人民共和国</code> 被拆分成<code>中华 人民 共和国</code>三部分。从而解决了此表中没有中华人民共和国的问题。<br>主要是通过bpe方式实现</p>
+<h3 id="bpe算法"><a href="#bpe算法" class="headerlink" title="bpe算法"></a>bpe算法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">BPE的大概训练过程：首先将词分成一个一个的字符，然后在词的范围内统计字符对出现的次数，每次将次数最多的字符对保存起来，直到循环次数结束。  </span><br><span class="line">eg:</span><br><span class="line"></span><br><span class="line">原始词表 &#123;<span class="string">'l o w e r &lt;/w&gt;'</span>: 2, <span class="string">'n e w e s t &lt;/w&gt;'</span>: 6, <span class="string">'w i d e s t &lt;/w&gt;'</span>: 3, <span class="string">'l o w &lt;/w&gt;'</span>: 5&#125;</span><br><span class="line">出现最频繁的序列 (<span class="string">'s'</span>, <span class="string">'t'</span>) 9</span><br><span class="line">合并最频繁的序列后的词表 &#123;<span class="string">'n e w e st &lt;/w&gt;'</span>: 6, <span class="string">'l o w e r &lt;/w&gt;'</span>: 2, <span class="string">'w i d e st &lt;/w&gt;'</span>: 3, <span class="string">'l o w &lt;/w&gt;'</span>: 5&#125;</span><br><span class="line">出现最频繁的序列 (<span class="string">'e'</span>, <span class="string">'st'</span>) 9</span><br><span class="line">合并最频繁的序列后的词表 &#123;<span class="string">'l o w e r &lt;/w&gt;'</span>: 2, <span class="string">'l o w &lt;/w&gt;'</span>: 5, <span class="string">'w i d est &lt;/w&gt;'</span>: 3, <span class="string">'n e w est &lt;/w&gt;'</span>: 6&#125;</span><br><span class="line">出现最频繁的序列 (<span class="string">'est'</span>, <span class="string">'&lt;/w&gt;'</span>) 9</span><br><span class="line">合并最频繁的序列后的词表 &#123;<span class="string">'w i d est&lt;/w&gt;'</span>: 3, <span class="string">'l o w e r &lt;/w&gt;'</span>: 2, <span class="string">'n e w est&lt;/w&gt;'</span>: 6, <span class="string">'l o w &lt;/w&gt;'</span>: 5&#125;</span><br><span class="line">出现最频繁的序列 (<span class="string">'l'</span>, <span class="string">'o'</span>) 7</span><br><span class="line">合并最频繁的序列后的词表 &#123;<span class="string">'w i d est&lt;/w&gt;'</span>: 3, <span class="string">'lo w e r &lt;/w&gt;'</span>: 2, <span class="string">'n e w est&lt;/w&gt;'</span>: 6, <span class="string">'lo w &lt;/w&gt;'</span>: 5&#125;</span><br><span class="line">出现最频繁的序列 (<span class="string">'lo'</span>, <span class="string">'w'</span>) 7</span><br><span class="line">合并最频繁的序列后的词表 &#123;<span class="string">'w i d est&lt;/w&gt;'</span>: 3, <span class="string">'low e r &lt;/w&gt;'</span>: 2, <span class="string">'n e w est&lt;/w&gt;'</span>: 6, <span class="string">'low &lt;/w&gt;'</span>: 5&#125;</span><br><span class="line">出现最频繁的序列 (<span class="string">'n'</span>, <span class="string">'e'</span>) 6</span><br><span class="line">合并最频繁的序列后的词表 &#123;<span class="string">'w i d est&lt;/w&gt;'</span>: 3, <span class="string">'low e r &lt;/w&gt;'</span>: 2, <span class="string">'ne w est&lt;/w&gt;'</span>: 6, <span class="string">'low &lt;/w&gt;'</span>: 5&#125;</span><br><span class="line">出现最频繁的序列 (<span class="string">'w'</span>, <span class="string">'est&lt;/w&gt;'</span>) 6</span><br><span class="line">合并最频繁的序列后的词表 &#123;<span class="string">'w i d est&lt;/w&gt;'</span>: 3, <span class="string">'low e r &lt;/w&gt;'</span>: 2, <span class="string">'ne west&lt;/w&gt;'</span>: 6, <span class="string">'low &lt;/w&gt;'</span>: 5&#125;</span><br><span class="line">出现最频繁的序列 (<span class="string">'ne'</span>, <span class="string">'west&lt;/w&gt;'</span>) 6</span><br><span class="line">合并最频繁的序列后的词表 &#123;<span class="string">'w i d est&lt;/w&gt;'</span>: 3, <span class="string">'low e r &lt;/w&gt;'</span>: 2, <span class="string">'newest&lt;/w&gt;'</span>: 6, <span class="string">'low &lt;/w&gt;'</span>: 5&#125;</span><br><span class="line">出现最频繁的序列 (<span class="string">'low'</span>, <span class="string">'&lt;/w&gt;'</span>) 5</span><br><span class="line">合并最频繁的序列后的词表 &#123;<span class="string">'w i d est&lt;/w&gt;'</span>: 3, <span class="string">'low e r &lt;/w&gt;'</span>: 2, <span class="string">'newest&lt;/w&gt;'</span>: 6, <span class="string">'low&lt;/w&gt;'</span>: 5&#125;</span><br><span class="line">出现最频繁的序列 (<span class="string">'i'</span>, <span class="string">'d'</span>) 3</span><br><span class="line">合并最频繁的序列后的词表 &#123;<span class="string">'w id est&lt;/w&gt;'</span>: 3, <span class="string">'newest&lt;/w&gt;'</span>: 6, <span class="string">'low&lt;/w&gt;'</span>: 5, <span class="string">'low e r &lt;/w&gt;'</span>: 2&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="为什么需要subword"><a href="#为什么需要subword" class="headerlink" title="为什么需要subword"></a>为什么需要subword</h2><ol>
+<li>词，字是文本信息中两种不同的级别，一般来说，字表示的语义太泛，很难明确，但是对于词来说，数量巨大不能全部包含。这种情况下如果使用字词中间的一种表示来作为语义单元，那么就能缓解这类问题。</li>
+<li>out-of-vocab 一直是制约翻译的一个很重要因素。因为训练语料再丰富也会有没见过的词，对于这种UNK魔性就会抓瞎，翻译结果自然很差。但是对于很多新词，大部分都是合成词，通过原有的多个词组合得到，如果能将这些组成的子词含义结合起来，那么自然就能得到新词的意义，而subword就是拆解。</li>
+<li>对于印欧语系，subword也能捕获到词缀等词的变化形式，从而把词本身的内在信息与词缀表示的变换信息结合起来。  </li>
+</ol>
+<h2 id="subword的特点"><a href="#subword的特点" class="headerlink" title="subword的特点"></a>subword的特点</h2><h3 id="词表大小变化"><a href="#词表大小变化" class="headerlink" title="词表大小变化"></a>词表大小变化</h3><!---
+减少的情况是什么？
+    合并了两个subword的所有情况
+
+词表增加？
+    增加一个subword，受到该subword影响的词有word=subword和subword在一个词中。增加一个word=subword的词，再增加两个（subword@@ + 后缀，减去包含subword词1个)。一共增加两个。
+
+    依赖关系很重要。
+
+--->
+<ul>
+<li>+1，表明加入合并后的新字词，同时原来在2个子词还保留（2个字词不是完全同时连续出现）</li>
+<li>+0，表明加入合并后的新字词，同时原来2个子词中一个保留，一个被消解（一个字词完全随着另一个字词的出现而紧跟着出现）</li>
+<li>-1，表明加入合并后的新字词，同时原来2个子词都被消解（2个字词同时连续出现）<br>实际上，随着合并的次数增加，词表大小通常先增加后减小。</li>
+</ul>
+<h2 id="代码重点分析"><a href="#代码重点分析" class="headerlink" title="代码重点分析"></a>代码重点分析</h2><h3 id="learn-bpe"><a href="#learn-bpe" class="headerlink" title="learn_bpe"></a>learn_bpe</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">symbol：操作多少次。就是num_symbol</span><br><span class="line">replace_pair</span><br><span class="line">    把原有单词join再re.sub替换掉，同时记录次数(这个词本身的次数)</span><br><span class="line">    找到有这个pair的所有词（indics)</span><br><span class="line">update_stat</span><br><span class="line">    old_word.index(first, i)</span><br><span class="line">    一个单词里面对于pair可能有好几个</span><br><span class="line">    减去合并前的前导情况</span><br><span class="line">    增加合并后的前导情况</span><br><span class="line">    对于相邻两个同样的合并情况的freq改变eg: B C B C跳过。因为不存在C B这种情况，都被合并了  </span><br><span class="line">get_pair_stat</span><br><span class="line">    统计所有符号对的频率，并建立索引</span><br><span class="line">    indics表明pair在这个单词中出现几次</span><br><span class="line">    zipfian分布：一个单词出现的频率与它在频率表里的排名成反比</span><br><span class="line">拆字：把所有word都拆成单个字，word的结尾字为字+&lt;&#x2F;w&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="learn-bpe-1"><a href="#learn-bpe-1" class="headerlink" title="learn_bpe"></a>learn_bpe</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">glossary，允许某些词不进行这个操作。比如特定的&lt;tag&gt;</span><br><span class="line">segment</span><br><span class="line">    _isolate_glosses先把需要保留的拎出</span><br><span class="line">    encode中对于glosses的直接返回，反之拆成字</span><br><span class="line">    把字拼成pair，然后从最后往前找（优先匹配长的）</span><br><span class="line">    添加@@ 分隔符的情况是一个词被拆成了好多词，如果没被拆不会添加。在out.append</span><br></pre></td></tr></table></figure>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ol>
+<li>合并多少次？<br>一般合并都是两个语言合在一起做subword，3.2W+3.2W=6.4W</li>
+<li>词表中找不到的越多，即没有合并的越多，拆分的就越细(按字拆)； 词表中能找到的越多，合并的越多，越不拆分(极限情况是所有都合并了，跟直接抄词表一样)，但是仍然保留了拆分的能力，更强但是词表更大</li>
+<li>合并的时候词表减少情况？<br> pair[0] pair[1] 这种词+@@减少是对于<code>尴 尬</code>这种特定组合的词合并后才会被移除（或者合并到后面一些特定组合，很少），不然其他情况的词组合有很多，不会被移走。</li>
+<li>什么时候会拆得比较碎？<br> 词都找不到，不在词典中，都会被当做单个字符+@@来看。或合并次数太少。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>NLP</category>
+      </categories>
+      <tags>
+        <tag>NLP</tag>
+        <tag>MT</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>依法治谁？我觉得是你</title>
+    <url>/2019/12/09/huawei-251/</url>
+    <content><![CDATA[<p><img src="%E7%A2%97%E7%B2%A5.jpeg" alt=""></p>
+<h2 id="由来"><a href="#由来" class="headerlink" title="由来"></a>由来</h2><p>华为一名工作了12年的老员工(李洪元)，在协商好离职补偿后，收到了公司部门秘书个人账号转入30万(交易摘要离职经济补偿)。大半年后，华为报案公安逮捕，先后以“涉嫌职务侵占”、“涉嫌侵犯商业秘密”和“涉嫌敲诈勒索”为由，羁押251天后无罪释放。其中无罪释放的关键证据，是这名老员工机智的把和人力，主管谈话内容全部录音，并保存了多个备份。在这个关键证据的支持下，检察院才认定无罪。<br><img src="%E5%BE%AE%E5%8D%9A1.jpeg" alt=""><br>这个事件迅速点爆了各个媒体然后被快速封杀，紧接着又悄然放开，现在又一点点删帖。这种有序的操作步骤和应对方式，不得不让我对华为公司后背发凉。<br><img src="%E8%A1%A8%E6%83%85%E5%8C%85_%E5%90%83%E6%83%8A.jpg" alt=""><br>据说录音里面的谈话包含有笑声，讨论气氛也很平和。这位李大哥也是久经江湖，十分老道，试想一下，如果你信任公司的公正和善良，没有带录音笔(正常的离职而已)，如果你没有多地备份的习惯(警察上来就收走了电脑手机)，没有把这份数据保留将近一年的时间(录音后半年抓捕，再羁押了251天，一般人也挺不了这么久就会被劝赶紧认罪就能从轻处理)，那么就不是251天了，而是3 5 年了，没有这么硬的证据，就是出来也投诉无门。</p>
+<p>对于大部分人来说，上面说的每一步骤都是层层的不可思议，都将把你筛选掉，走不到这一步，意味着大部分人在还没有维权的时候就已经失败了，况且李大哥现在也还只是发声，并没有得到应有的赔偿和对公司的惩戒！看到这里不知道你怎么想，是心底里泛出一丝悲凉，推想到自己后的惺惺相惜，还是冬日里吃了一口36.5°C的血馒头的舒坦？<br><img src="%E8%A1%A8%E6%83%85%E5%8C%85_%E5%86%B7%E6%BC%A0.jpg" alt=""></p>
+<!--
+// 真的让出身985，工作996，劝退35，离职251，维权404
+// 另一个角度来看这个问题，员工也有问题？
+// 穿越历史和年龄的一句话，道一声你好。
+// 他这么大个企业，出点狗屁倒灶的事也不算稀奇
+// 洗地文章屁股在哪？
+-->
+
+<h2 id="个例还是冰山？"><a href="#个例还是冰山？" class="headerlink" title="个例还是冰山？"></a>个例还是冰山？</h2><p>对于这类事件，我想但凡有点生活经验的人都不会认为这个辛酸的故事是单例，</p>
+<p>就像你分别去法院/派出所 问今年又多少个盗窃案，回答肯定不一样，但你肯定知道他们给出的数字至少乘以10才是真实的数字。</p>
+<p><img src="%E5%BE%AE%E5%8D%9A2.jpg" alt=""></p>
+<h2 id="坐等反转？"><a href="#坐等反转？" class="headerlink" title="坐等反转？"></a>坐等反转？</h2><p>吃瓜老手喜欢反转，觉得这事过于荒唐，没那么简单，得听听华为怎么说，得扯扯皮才有意思。</p>
+<p>不好意思，华为出声明了，核心就一句话：不服去告我。<strong>还是没把你整服</strong><br><img src="%E5%8D%8E%E4%B8%BA%E5%A3%B0%E6%98%8E.jpg" alt=""><br>华为没有反驳，海军们又会跳出来说，老子行得端坐得正，相信党和政府。</p>
+<p>卧槽，我特别相信，这次检察院能做出撤销控诉的决定我已经看到了我们这种公检法体制还是有自我纠偏效果滴(也可能我以偏概全)。</p>
+<p>其实关于反转，我就相信一点，如果你是李哥，<strong>一个拖家带口的中年菜逼工程师，会想着给我大华为挖坑骗钱？还觉</strong></p>
+<p>得能成？不怕国人的唾沫淹死你？</p>
+<p>海军们可能又说，境外势力操纵？呵呵，你真牛，比公安都了解境外势力。</p>
+<h2 id="洗地文章怎么看？"><a href="#洗地文章怎么看？" class="headerlink" title="洗地文章怎么看？"></a>洗地文章怎么看？</h2><p>看你麻痹，这就是我的态度。看到的洗地文章，大概有这么几个观点：</p>
+<ol>
+<li><p>这次是误会，秘书用个人银行支付，岗位变动后新人发现账务对不上，由此起诉李洪元引发的“误会”。</p>
+</li>
+<li><p>华为十问 </p>
+</li>
+</ol>
+<p>问你妹啊！从这篇文章看出来的李哥根本<strong>不是一个工作十几年的理工男啊，</strong><br>而是<strong>熟读法律和各种司法操作细节的法律界大亨兼任市场营销高手啊</strong><br>操作娴熟滴水不漏，能把一个十几万人大公司的法务团队玩得团团转，骗过深圳公安和检察院！各种宣传文章能避开所有坑，说假话说的这么真，让普罗大众都相信并为此买单。<br>这篇文章真实太坏了，坏的地方是混淆视听，让大家对李哥的动机产生怀疑，然后怀疑一切，对双方都不信任，然后就是一滩浑水，不了了之。文章还是前hr写的？不知道是是不是真的，就算是真的，是不是hr是被洗脑的第一线，出来了还不忘那个脑子。</p>
+<ol start="3">
+<li>公司这么大，这是部分现象，个别领导的问题，华为还是伟光正的。</li>
+</ol>
+<p>哈哈，没几天就2020年了，您这想法和皇上是朗朗乾坤，心如明镜，下面奸臣作孽，蒙蔽圣上有什么区别？</p>
+<p>况且从华为的声明中，你看到一丝一毫要严惩的味道了麽？是你公司错了就是错了，员工的水平就是公司的水平，管理不善，用人失察也是公司的问题！</p>
+<p>送你两句：切实提高公司管理水平，不断推进治理体系现代化。</p>
+<p>如果你不是华为公司，你拿这种事情去报案，能不分青红皂白就先抓了再说，然后一个罪名换一个罪名套不死你不罢休？</p>
+<ol start="4">
+<li><p>肯定他也有问题，不会无缘无故搞他的。<br>这种人是华为大股东吧，可能还喜欢宫斗剧。</p>
+</li>
+<li><p>不喜欢别买他东西，离职啊！<br>爱他才要提意见，提意见是希望更好，让平等真相像阳光一样存在不好么？</p>
+</li>
+</ol>
+<p>如果这种磨灭人性，以大欺小的公司成为了行业标杆，是千千万万个像你像我一样的打工者愿意看到的麽？</p>
+<h2 id="有啥影响"><a href="#有啥影响" class="headerlink" title="有啥影响"></a>有啥影响</h2><p>适逢中美贸易战关键时刻，华为本身就是老美的靶子，多少人是觉得老美欺人太甚而去挺华为，换上他家的手机。现在倒好，祸起萧墙不攻自破。老美做梦都笑醒了吧。</p>
+<p>华为的产品我周围很多人用，确实非常棒，这点我还是承认的，研发实力强国家民族品牌，赚爱国钱我觉得都没问题，企业嘛，就是盈利，</p>
+<p>但是这种利用法律空子，罔顾员工合法权益的事件再三发生，再伴随着狼性文化，加班文化，35离职等一系列的骚操作，我还能说啥，难道这就是正确的？</p>
+<p>这次事件对华为自身品牌的打击非常沉重，坐等下个季度的手机销量数据。小米 OPPO</p>
+<p>等厂商看来迎来了瓜分市场的又一个契机。市场还是多家竞争比较好，华为近段时间靠着爱国宣传横扫手机市场的情况看来得换换了，</p>
+<p>一家独大就会各种幺蛾子，你连跳槽都没地去，干掉了需求，一切牛逼都是扯淡，你说你木乃伊做的举世无双，有屁用？</p>
+<p>对于华为内部的员工来说，看到这次事怕是各个人都对公司的信任减少了一分，人心思变，多年来的洗脑工程溃于蚁穴。</p>
+<p>这种情况会增加员工之间合作的成本，会降低公司的运作效率，不知道里面的各位老哥会不会因此开启更疯狂的加班。。。。。。</p>
+<p>资深员工不好找下家会无奈加班，小白反思公司和自己的关系，会有人跳槽。还未步出校门的新韭菜又将如何看待，选择？</p>
+<h2 id="结局如何"><a href="#结局如何" class="headerlink" title="结局如何"></a>结局如何</h2><p>我不知道这个结果会如何，如果让我猜测一下，我认为可能有三个：</p>
+<ol>
+<li><p>上级领导部门介入，彻查公检法，严惩此事，华为道歉。</p>
+</li>
+<li><p>华为私下和解，老李不继续追究。这就是拿多少RMB的事情了。</p>
+</li>
+<li><p>悄无声息，此事人间蒸发，所有地方都没人讨论。又有一个新的明星出轨。</p>
+</li>
+</ol>
+<p>你问我哪个最可能，我不知道，我只知道我们是全面依法治国。</p>
+<h2 id="一些期望"><a href="#一些期望" class="headerlink" title="一些期望"></a>一些期望</h2><p>这件事能看出维[护]权之难，我想没有一个人普通人希望当发生纠纷时都需要录音笔，异地容灾，长期备份，熟读法律吧。</p>
+<p>(这还是维*的起点，还是在中国最开放的深圳！！！)</p>
+<p>祝愿李哥一切顺利！</p>
+<center>
+
+<blockquote>
+<p>起初，纳粹抓共产党人的时候，<br>我沉默了，因为我不是共产党人。  </p>
+</blockquote>
+<blockquote>
+<p>当他们抓社会民主主义者的时候，<br>我沉默了，因为我不是社会民主主义者。</p>
+</blockquote>
+<blockquote>
+<p>当他们抓工会成员的时候，<br>我沉默了，因为我不是工会成员。</p>
+</blockquote>
+<blockquote>
+<p>当他们抓犹太人的时候，<br>我沉默了，因为我不是犹太人。</p>
+</blockquote>
+<blockquote>
+<p>最后当他们来抓我时，<br>再也没有人站起来为我说话了。</p>
+</blockquote>
+</center>]]></content>
+      <categories>
+        <category>观点</category>
+      </categories>
+      <tags>
+        <tag>华为</tag>
+        <tag>碗粥</tag>
+        <tag>社会</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2019/12/09/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
